@@ -1,0 +1,8 @@
+.Layout {
+  padding: 10% 7%;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+}

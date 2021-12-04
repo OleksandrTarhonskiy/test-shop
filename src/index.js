@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import 'assets/styles/index.scss';
 import 'assets/fonts/Roboto-Regular.ttf';
 
-import App from './App';
+import App from './views/App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
