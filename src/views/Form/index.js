@@ -2,6 +2,7 @@ import React from 'react';
 
 import useForm from 'hooks/useForm';
 import validate from 'utils/validation';
+import icon from 'assets/images/error.svg';
 
 const Form = (props) => {
   const {
@@ -9,33 +10,41 @@ const Form = (props) => {
     errors,
     handleChange,
     handleSubmit,
+    onBlur,
   } = useForm(submit, validate);
 
   function submit() {
-    console.log('No errors, submit callback called!');
+    console.log(values);
   }
 
   return (
     <form>
-      {console.log(errors)}
       <div className="control">
-        <input
-          name="name"
-          value={values.name || ''}
-          onChange={handleChange}
-          placeholder="name" 
-          className={`form-input ${errors.name ? 'error' : ''}`}
-        />
+        <div className="input-with-icon">
+          <input
+            name="name"
+            value={values.name || ''}
+            onChange={handleChange}
+            placeholder="name" 
+            className={`form-input ${errors.name ? 'error' : ''}`}
+            onBlur={(e) => onBlur(e)}
+          />
+          {errors.name && <img className="input-with-icon_icon" src={icon} alt="" />}
+        </div>
         {errors.name && <span className="control-error">{errors.name}</span>}
       </div>
       <div className="control">
-        <input 
-          name="number"
-          value={values.number || ''}
-          onChange={handleChange}
-          placeholder="number" 
-          className={`form-input ${errors.number ? 'error' : ''}`} 
-        />
+        <div className="input-with-icon">
+          <input 
+            name="number"
+            value={values.number || ''}
+            onChange={handleChange}
+            placeholder="number" 
+            className={`form-input ${errors.number ? 'error' : ''}`}
+            onBlur={(e) => onBlur(e)}
+          />
+          {errors.number && <img className="input-with-icon_icon" src={icon} alt="" />}
+        </div>
         {errors.number && <span className="control-error">{errors.number}</span>}
       </div>
       <div className="control mt-3">

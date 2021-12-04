@@ -1,5 +1,12 @@
-.cards-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+@import '../assets/styles/mixins';
+
+.App {
+  &__cards-wrapper {
+    @include flex-center;
+    flex-wrap: wrap;
+  }
+
+  &__btn-wrapper {
+    @include flex-center;
+  }
 }
