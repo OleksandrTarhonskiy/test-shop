@@ -14,7 +14,7 @@ const Item = ({ data }) => {
       label={data.category}
       heading={data.name}
     >
-      <div className="Item__body mt-3">
+      <div className="Item__body">
         <span className="price">
           {data.price}
         </span>
