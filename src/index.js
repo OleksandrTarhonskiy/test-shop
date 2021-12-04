@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+import 'assets/styles/index.scss';
+import 'assets/fonts/Roboto-Regular.ttf';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
