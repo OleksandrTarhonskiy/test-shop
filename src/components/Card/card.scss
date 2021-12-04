@@ -1,9 +1,10 @@
 .Card {
   min-width: 30%;
+  width: 18em;
   background-color: var(--color-white);
   border-radius: var(--border-radius-lg);
   padding: 2rem;
-  margin-bottom: 2rem;
+  margin: 0 1rem 2rem 1rem;
 
   &.card-success {
     &:hover {

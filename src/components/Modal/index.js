@@ -1,9 +1,9 @@
 import React from 'react';
 
 import './modal.scss';
-import close from 'assets/images/x.png';
+import close from 'assets/images/x.svg';
 
-const Modal = ({ open, onToggle, heading, label, children }) => {
+const Modal = ({ open, onToggle, children }) => {
 
   if (!open) return null;
 
@@ -16,11 +16,6 @@ const Modal = ({ open, onToggle, heading, label, children }) => {
         >
           <img src={close} alt="x" />
         </div>
-          {
-            label &&
-            <span>{label}</span>
-          }
-          {heading}
           {children}
       </div>
     </div>

@@ -12,7 +12,7 @@ const Card = ({
     <div className={`Card card-${type}`}>
       <div className="Card__header">
         {label && 
-          <span className="Card__header-type">
+          <span className="label">
             {label}
           </span>}
           <h2>
