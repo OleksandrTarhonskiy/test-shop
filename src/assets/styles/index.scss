@@ -45,6 +45,18 @@ h1, h2 {
       color: var(--color-white);
     }
   }
+
+  &.arrow-right {
+    position: relative;
+
+    &:hover {
+      &:after {
+        content: url(../images/arrow-right.svg);
+        width: 10px;
+        position: absolute;
+      }
+    }
+  }
   
   &-success {
     background-color: var(--color-green);

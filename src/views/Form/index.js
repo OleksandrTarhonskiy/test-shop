@@ -3,6 +3,7 @@ import React from 'react';
 import useForm from 'hooks/useForm';
 import validate from 'utils/validation';
 import icon from 'assets/images/error.svg';
+import arrow from 'assets/images/arrow-right.svg';
 
 const Form = (props) => {
   const {
@@ -51,7 +52,7 @@ const Form = (props) => {
         <button 
           type="submit"
           onClick={handleSubmit}
-          className="btn btn-success w-100"
+          className="btn btn-success w-100 arrow-right"
         >
           Order
         </button>
