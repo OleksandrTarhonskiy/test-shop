@@ -3,6 +3,7 @@ import React, { useState} from 'react';
 import AppLayout from 'layouts/AppLayout';
 import Card from 'components/Card';
 import Modal from 'components/Modal';
+import Form from './Form'
 import './App.scss';
 
 function App() {
@@ -30,9 +31,9 @@ function App() {
       <button onClick={() => setOpen(true)} className="btn btn-success lg">
         Buy
       </button>
-      <input type="text" placeholder="name" className="form-input error" />
+      
       <Modal onToggle={setOpen} open={open}>
-        
+        <Form />
       </Modal>
     </AppLayout>
   );
