@@ -13,4 +13,3 @@ visit http://localhost:3000
 .env already created. I have not added it .gitignore
 
 ![alt text](./img1.png)
-![alt text](./img2.png)
