@@ -25,7 +25,6 @@ const Item = ({ data }) => {
           Buy
         </button>
       </div>
-      {console.log(data)}
       <Modal onToggle={setOpen} open={open}>
          <Order data={data} />
       </Modal>
